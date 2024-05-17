@@ -1,0 +1,49 @@
+.botones-l {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categoria-info {
+    display: inline-block; /* Para que los elementos se muestren en línea */
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+
+
+/*estilos para el select*/
+/* Estilos para el select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos para el hover del select */
+select:hover {
+    border-color: #aaaaaa;
+}
+
+/* Estilos para el foco del select */
+select:focus {
+    border-color: #555555;
+}
+
+/* Estilos para el ícono desplegable del select */
+select::-ms-expand {
+    display: none;
+}
+
+    

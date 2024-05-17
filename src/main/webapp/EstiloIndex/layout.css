@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: column; /* La propiedad correcta para alinear los elementos en columnas */
+    align-items: center; /* Para alinear los elementos verticalmente en el centro */
+}
+ 
+ 
+ 
+ .video-container {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     z-index: -1;
+ }
+ /* Estilo para el video */
+ #video-bg {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+ }
+ 
+ /*cabecera*/
+ .header {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente negro */
+    border-bottom: 1px solid white; /* Línea blanca en la parte inferior */
+    border-top: 1px solid white;
+    color: white; /* Texto blanco */
+    padding: 20px 0; /* Espaciado interior arriba y abajo */
+    width: 80%;
+    margin-top: 10vh;
+    
+}
+
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 5vw;
+	padding-left: 5vw;
+}
+
+.header h1 {
+    font-size: 36px; /* Tamaño de la fuente */
+    margin: 0; /* Elimina el margen por defecto */
+    color: #ffffff; /* Color blanco */
+}
+
+.header h1 span.teca {
+    color: red; /* Color rojo para "teca" */
+}
+
+.nvar a {
+    color: white; /* Color blanco para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin-right: 20px; /* Espacio entre los enlaces */
+}
+
+.nvar a.login {
+    color: white; /* Color blanco para el enlace de login */
+}
+
+/* cuerpo */
+.bodys {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Efecto de texto de arco iris con color de fondo azul */
+.rainbow-text {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-animation 2s infinite linear;
+    text-shadow: 0 0 30px white; /* Agrega un resplandor blanco al texto */
+    -webkit-text-stroke: 1px black; /* Agrega un contorno negro al texto */
+}
+
+@keyframes rainbow-animation {
+    0% { background-position: 0 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.texto p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em; /* Ajusta el tamaño del texto según sea necesario */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+    margin-bottom: 20px; /* Agrega espaciado en la parte inferior del párrafo */
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1E90FF; /* Azul peru */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+}
+
+.btn-primary:hover {
+    background-color: #FF0000; /* Rojo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

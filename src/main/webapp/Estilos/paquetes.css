@@ -1,0 +1,193 @@
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rebeccapurple;
+    }
+    
+    /*inicio estilos Cartas */
+    .popup{
+    margin: 0 auto;
+    }
+	 .popup-content {
+	    display: flex;
+	    width: 50vw;
+	    height: 50vh;
+	    align-items: center;
+	    padding-left: 200px;
+	}
+
+    .card1 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 250px;
+    background: #1dbf01;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .card2 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 250px;
+    background: #ec7dff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+   .card3 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 250px;
+    background: #f7ca1b;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    }
+
+    
+    .popup-content h2 {
+    text-align: center;
+    font-family: 'Lobster', cursive; /* Aplica la fuente Lobster */
+    }
+    
+    .card1 ul{
+    margin-bottom: 70px; 
+    margin-top: 20px
+    }
+    .card2 ul{
+    margin-bottom: 70px; 
+    margin-top: 20px
+    }
+    .card3 ul{
+    margin-bottom: 70px; 
+    margin-top: 20px
+    }
+    
+    
+	.card1 button {
+    border-radius: 30px;
+    background-color: green;
+    transition: background-color 0.3s; /* Agregamos transición para un cambio suave */
+    height: 30px;
+    color: white;
+	}
+	
+	.card2 button {
+    border-radius: 30px;
+    background-color: green;
+    transition: background-color 0.3s; /* Agregamos transición para un cambio suave */
+    height: 30px;
+    color: white;
+	}
+	
+	.card3 button {
+    border-radius: 30px;
+    background-color: green;
+    transition: background-color 0.3s; /* Agregamos transición para un cambio suave */
+    height: 30px;
+    color: white;
+	}
+	
+	.btnTar:hover {
+	    background-color: red; /* Cambia el color de fondo a rojo al pasar el cursor sobre el botón */
+	}
+
+    
+    /* fin estilos Cartas */
+	
+    #form-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*facturas cuerpo*/
+    #form-content {
+        width: 250px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+	    flex-direction: column;
+	    align-items: center;
+    }
+
+
+	.conten-form h2 {
+        font-family: 'Lobster', cursive; 
+    }
+    
+    form {
+    display:flex;
+    flex-direction: column;
+    
+    }
+    
+.btn1, .btn2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn1 {
+  background-color: green;
+  margin-bottom: 10px;
+}
+
+.btn2 {
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.btn1:hover {
+  background-color: darkgreen;
+}
+
+.btn2:hover {
+  background-color: darkred;
+}
+    
+    .btn3 {
+	display: flex;
+    border: none;
+    background: none;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .imgImage{
+     width: 20px;
+    }
+    
+    input{
+    padding-left: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+
+
+    

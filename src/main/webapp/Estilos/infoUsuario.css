@@ -1,0 +1,293 @@
+         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh; /* Ensure the body takes the full height */
+        }
+
+        .sidebar {
+        margin-top: 45px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 200px;
+            background-color: grey;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .sidebar button {
+            display: block;
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .sidebar button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .main-content {
+        margin-top: 45px;
+            margin-left: 200px;
+            padding: 20px;
+            flex-grow: 1;
+            background: #4c5577;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #0ab500;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        
+        /*Parte del header*/
+        /* Cabecera */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.logo a:hover {
+    transform: scale(1.1);
+    color: #0ab500;
+}
+
+.user-info a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.user-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.tooltip {
+    margin-right: 3%;
+    display: flex;
+    position: relative; /* Asegura que .tooltiptext se posicione correctamente */
+}
+
+.tooltiptext {
+    display: none;
+    position: absolute;
+    bottom: -28px;
+    left: 95%;
+    transform: translateX(-50%);
+    background-color: white; /* Fondo visible */
+    color: black; /* Texto legible */
+    padding: 5px; /* Espacio interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.user-btn:hover + .tooltiptext, .tooltiptext:hover {
+    display: block;
+}
+
+#cerrar-sesion-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+        
+        
+/*contenerdo*/  
+/* Contenedor de datos del usuario */
+
+#user-data-container h2 {
+    border-bottom: 2px solid #0ab500; /* Línea inferior */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0ab500; /* Color verde */
+    font-size: 28px; /* Tamaño de fuente */
+}
+
+ .info-container {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .user p{
+    margin-bottom: -10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+    font-weight: bold;
+ }
+
+ .user h4{
+margin-bottom: 50px;
+    margin-left: 100px;
+    font-weight: bold;
+    color: #0ab500;
+ }
+ 
+ .btnSwitch {
+    display: flex;
+    align-items: center;
+ }
+
+ .btnSwitch h3{
+ margin-left: 20px;
+ }
+
+/*estilos info plan*/
+.conten-boleta h2 {
+    border-bottom: 2px solid #0ab500; /* Línea inferior */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0ab500; /* Color verde */
+    font-size: 28px; /* Tamaño de fuente */
+}
+
+/*estilos de factura*/
+  .factura {
+      background: #d8ffcc;
+      border: 2px solid #000;
+      padding: 20px;
+      width: 400px;
+  }
+  .factura-info {
+      margin-bottom: 20px;
+  }
+  .factura-info p {
+      margin: 5px 0;
+  }
+  .item {
+      margin-bottom: 10px;
+  }
+
+/*estilos de boleta*/
+  .boleta {
+      background: #d8ffcc;
+      border: 2px solid #000;
+      padding: 20px;
+      width: 400px;
+  }
+  .boleta-info {
+      margin-bottom: 20px;
+  }
+  .boleta-info p {
+      margin: 5px 0;
+  }
+  .item {
+      margin-bottom: 10px;
+  }
+    
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
